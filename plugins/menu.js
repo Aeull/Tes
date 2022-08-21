@@ -223,11 +223,11 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
    {
 	title: `${htki} MAIN ${htka}`,
 	rows: [
-	    {title: `❀📛 ${pmenus} INFO BOT`, rowId: ".info", description: "Menampilkan kecepatan respon Fangz BOT"},
-	    {title: `❀💌 ${pmenus} OWNER`, rowId: ".owner", description: "Menampilkan List owner Fangz BOT"},
+	    {title: `❀📛 ${pmenus} INFO BOT`, rowId: ".info", description: "Menampilkan kecepatan respon"},
+	    {title: `❀💌 ${pmenus} OWNER`, rowId: ".owner", description: "Menampilkan List owner"},
 	    {title: `❀📔 ${pmenus} SCRIPT`, rowId: ".sc", description: `Source Code ${namebot}`},
 	{title: `❀📮 ${pmenus} S&K BOT`, rowId: ".rules", description: `Peraturan menggunakan ${namebot}`},
-	{title: `❀🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "Request fitur Fangz BOT"},
+	{title: `❀🗣️ ${pmenus} REQUEST FITUR`, rowId: ".request", description: "Request fitur"},
 	]
     },{
 	title: `${htki} SUPPORT ${htka}`,
@@ -300,11 +300,11 @@ let tek = `*✧${ucapan()} ${conn.getName(m.sender)}*
 ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 ╰═┅═━═┅═━═┅═━––––––๑
 
-               「 *FANGZ BOT あ⁩* 」
+ *ArullBotz⁩* 
 `
 const listMessage = {
   text: tek,
-  footer: '📮Fangz BOT V5\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕',
+  footer: 'ArullBotz\n\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `LIST FITUR`,
@@ -512,12 +512,12 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n⚡ Supported By Fangz TEAM',
+            footer: titlebot + '\n⚡ Supported By Creator Bot',
             templateButtons: [
                 {
                     urlButton: {
                         displayText: `${namebot}`,
-                        url: 'https://s.id/Fangzganz'
+                        url: 'https://chat.whatsapp.com/J5hA6E5FJBD7ENPRrac9fu'
                     }
                 },
                 {
@@ -560,7 +560,7 @@ handler.help = ['menu', 'help', 'list', '?']
 handler.tags = ['main']
 handler.command = /^(menu|help|list|\?)$/i
 
-handler.register = true
+handler.register = false
 handler.exp = 3
 
 export default handler
